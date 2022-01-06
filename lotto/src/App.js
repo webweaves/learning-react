@@ -1,8 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Lottery from './Lottery';
-
-import Ball from "./Ball.js";
 
 function App() {
   return (
