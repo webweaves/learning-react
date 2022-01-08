@@ -17,11 +17,23 @@ class Lottery extends React.Component {
     }
 
     generate = () => {
-        this.setState(curState => ({
-            nums: curState.nums.map(
-                n => Math.floor(Math.random() * this.props.maxNumber) + 1
-            )
-        }))
+        /*
+        * generate a random number and add it to the list of numbers if not a duplicate
+        */
+        var arr = [];
+        while(arr.length < this.props.maxBalls){
+            var r = Math.floor(Math.random() * this.props.maxNumber) + 1
+            if (arr.indexOf(r) === -1) arr.push(r);
+        }
+
+        /*
+        * sort the array of numbers
+        */
+        arr.sort(function(a, b) {
+            return a - b;
+        });
+
+        this.setState({nums: arr});
     }
 
     newNumbers = () => {
