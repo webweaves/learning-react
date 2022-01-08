@@ -6,6 +6,8 @@ A simple lottery ball generation application
 Examples of:
 * Creating and overriding defaultProps
 * Generating a random number
+* Sorting a list of integers
+* Checking for duplicates
 * Keeping track of numbers in this.state
 * Passing props down to child components
 
