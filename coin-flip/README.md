@@ -4,7 +4,6 @@ Coin flip
 A simple coin flip generation application
 
 Examples of:
-* Creating and overriding defaultProps
 * Generating a element based on an array of elements
 * Updating the current state of counters inline
 
